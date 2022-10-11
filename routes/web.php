@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('coba', function () {
+    return "こんにちわ、 渡し 名前和 泉ーです";
+});
