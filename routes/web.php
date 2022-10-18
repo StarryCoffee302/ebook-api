@@ -21,8 +21,9 @@ Route::get('coba', function () {
     return "こんにちわ、 渡し 名前和 泉ーです";
 });
 
+//objek json
 Route::get('coba1', function () {
-    return view('petra','mus', 'starry');
+    return view('petra', 'mus', 'starry');
 });
 
 // objek json
