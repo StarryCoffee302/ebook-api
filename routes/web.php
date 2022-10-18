@@ -20,3 +20,27 @@ Route::get('/', function () {
 Route::get('coba', function () {
     return "こんにちわ、 渡し 名前和 泉ーです";
 });
+
+Route::get('coba1', function () {
+    return view('petra','mus', 'starry');
+});
+
+// objek json
+Route::get('coba2', function () {
+    return [
+        'Nama' => 'Muhammad Bintang',
+        'Kelas' => 'XII RPL 5',
+        'NIS' => 3103120143
+    ];
+});
+
+Route::get('coba3', function () {
+    return response()->json( 
+        [
+        'Nama' => 'Muhammad Bintang',
+        'Kelas' => 'XII RPL 5',
+        'NIS' => 3103120143
+        ],201
+
+);
+});
